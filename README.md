@@ -2,7 +2,7 @@
 A simple form using Spring
 
 The class tree and diagram looks like this: 
-![KLM package diagram](https://github.com/cklimkowski/klmspringforms/blob/master/wiki/klmpackages.png)
+![KLM package diagram](https://github.com/cklimkowski/klmspringforms/blob/master/klmpackages.png)
 
 The **UserManagementController** at the beginning consists of two private properties **userDatabase**, **userIdSequence** and a synchronized private method **getNextUserId()** which yields another user ID by incrementing **userIdSequence**. There is also a request handler method **displayUsers(map)** that retrieves a map of users from **userDatabase** property, saves it into a **model** map employing a **"userList"** string as id and returns the name of the proper view **"user/list"** as a string.
 
