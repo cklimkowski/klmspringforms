@@ -1,22 +1,9 @@
 # klmspringforms
-<<<<<<< HEAD
-KLM A simple form using Spring
-
-
-If you want to embed images, this is how you do it:
-
-![KLM package diagram](https://github.com/cklimkowski/klmspringforms/blob/master/wiki/klmpackages.png)
-
-a simple controller
-a few JSP views
-
-=======
 A simple form using Spring
 
 The class tree and diagram looks like this: 
 ![KLM package diagram](https://github.com/cklimkowski/klmspringforms/blob/master/wiki/klmpackages.png)
 
->>>>>>> 3d2c0a135485f26210641b4dc2646f2887a9b2bb
 The **UserManagementController** at the beginning consists of two private properties **userDatabase**, **userIdSequence** and a synchronized private method **getNextUserId()** which yields another user ID by incrementing **userIdSequence**. There is also a request handler method **displayUsers(map)** that retrieves a map of users from **userDatabase** property, saves it into a **model** map employing a **"userList"** string as id and returns the name of the proper view **"user/list"** as a string.
 
 ```java
